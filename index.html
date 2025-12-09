@@ -1,1 +1,138 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hiren Patel – Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+    }
+    .wrap {
+      max-width: 900px;
+      width: 100%;
+      padding: 32px 20px 64px;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .name {
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .tag {
+      font-size: 14px;
+      color: #9ca3af;
+    }
+    nav a {
+      margin-left: 16px;
+      font-size: 14px;
+      color: #93c5fd;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      margin-bottom: 32px;
+      background: #020617;
+      border-radius: 12px;
+      padding: 20px;
+      border: 1px solid #1f2937;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+    footer {
+      margin-top: 24px;
+      font-size: 13px;
+      color: #9ca3af;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #1e293b;
+      font-size: 12px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="name">Hiren Patel</div>
+        <div class="tag">Web Developer · Computer Trainer · Tech Enthusiast</div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am learning Git, GitHub and web development. This is my first portfolio website
+        hosted using GitHub Pages. I love working with computers and helping others learn.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div>
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge">Git & GitHub</span>
+        <span class="badge">MS Office</span>
+        <span class="badge">Computer Basics</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Hello World Website</strong> – Simple static page hosted on GitHub Pages.</li>
+        <li><strong>Student Practice Sheets</strong> – Basic computer exercises for beginners.</li>
+        <li><strong>Blog Experiments</strong> – Layout and design practice using Blogger and HTML.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:youremail@example.com" style="color:#93c5fd;">youremail@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/Raamdoot" style="color:#93c5fd;">@Raamdoot</a></p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Hiren Patel · Hosted on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
